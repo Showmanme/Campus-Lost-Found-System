@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost & Found</title>
+</head>
+<body>
+    <h1>Campus Lost & Found</h1>
+    {% if user.is_authenticated %}
+        <h1>Welcome, {{ user.username }}!</h1>
+        <p>You are logged in.</p>
+        <a href="{% url 'report' %}">Report an Item</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+        <h1>You are not logged in.</h1>
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a lost or found item</title>
+</head>
+<body>  
+    <h1>Report Lost or Found</h1>
+    <form method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Report</button>
+    </form>
+    <a href="{% url 'home' %}">Back To Home</a>
+    
+</body>
+</html>
