@@ -145,7 +145,7 @@ Assignment8/
 ```
 ⚙️ Installation & Setup
 1. Clone the Repository
-git clone https://github.com/YOUR_USERNAME/campus-lost-found-system.git
+git clone https://github.com/showmanme/campus-lost-found-system.git
 2. Navigate to the Project
 cd campus-lost-found-system
 3. Create a Virtual Environment
